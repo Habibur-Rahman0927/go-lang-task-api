@@ -15,6 +15,9 @@ import (
 
 func main() {
 	fmt.Println("Hello World")
+	// core fundamental pratices
+	// gopractice.Pracitce()
+
 	r := gin.Default()
 	db := config.SetupDB()
 	db.AutoMigrate(&models.Task{})

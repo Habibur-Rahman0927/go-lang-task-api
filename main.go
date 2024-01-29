@@ -31,6 +31,7 @@ func main() {
 	r.GET("/tasks/:id", controllers.FindTask)
 	r.PATCH("/tasks/:id", controllers.UpdateTask)
 	r.DELETE("tasks/:id", controllers.DeleteTask)
+	r.POST("bundle-tag", controllers.FilterAndRetrieveBundleTags)
 	r.Run()
 }
 
